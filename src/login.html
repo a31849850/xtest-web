@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<title>身份认证</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<style>
+		html,
+		body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			position: relative
+		}
+
+		.main {
+			display: none;
+			width: 600px;
+			position: absolute;
+			padding: 20px 0 40px;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: 2px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.main form {
+			display: none;
+			text-align: center
+		}
+
+		.main form .row {
+			padding: 10px
+		}
+
+		.main form .row input {
+			width: 160px;
+			padding: 10px;
+			-webkit-appearance: none;
+			background-color: #fff;
+			background-image: none;
+			border-radius: 4px;
+			border: 1px solid #dcdfe6;
+		}
+
+		.btn {
+			padding: 4px 10px;
+			color: #fff;
+			user-select: none;
+			border-radius: 5px;
+			cursor: pointer;
+			border: 1px solid #ccc;
+		}
+
+		.btn-login,
+		.btn-init {
+			background: #409eff;
+			margin-right: 50px;
+		}
+
+		.btn-clear {
+			background: #d11;
+		}
+
+		#apihost input::-webkit-input-placeholder {
+			color: #c1c1c1
+		}
+
+		#apihost .txt1 {
+			width: 40px
+		}
+
+		#apihost .txt2 {
+			width: 120px
+		}
+
+		#apihost .txt3 {
+			width: 40px
+		}
+		.reset-link{position:fixed;left:10px;top:3px;font-size: 13px;color:#d1d1d1;text-decoration:none}
+	</style>
+
+</head>
+
+<body>
+	<div class="main">
+		<form class="login-form">
+			<h2>系统登录</h2>
+			<div class="row">
+				<label>账号</label>
+				<input type="text" name="user">
+			</div>
+			<div class="row">
+				<label>密码</label>
+				<input type="password" name="password">
+			</div>
+			<div class="row">
+				<span class="btn btn-login">登录</span>
+				<!-- <span class="btn btn-clear">初始化配置</span> -->
+			</div>
+		</form>
+	</div>
+	<a href="/reset.html" class="reset-link">重置系统密码</a>
+</body>
+
+</html>
